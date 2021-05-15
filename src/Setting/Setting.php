@@ -8,7 +8,7 @@ class Setting extends Model
 {
     protected $guarded = ['updated_at', 'id'];
 
-    protected $table = 'settings';
+    protected $table = 'app_settings';
 
     public function scopeGroup($query, $groupName)
     {

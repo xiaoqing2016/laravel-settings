@@ -13,7 +13,7 @@ class AddGroupColumnOnSettingsTable extends Migration
      */
     public function up()
     {
-        Schema::table('settings', function (Blueprint $table) {
+        Schema::table('app_settings', function (Blueprint $table) {
             $table->dropUnique('settings_name_unique');
             $table->string('group')->default('default');
         });
@@ -26,7 +26,7 @@ class AddGroupColumnOnSettingsTable extends Migration
      */
     public function down()
     {
-        Schema::table('settings', function (Blueprint $table) {
+        Schema::table('app_settings', function (Blueprint $table) {
             $table->dropColumn('group');
         });
     }
