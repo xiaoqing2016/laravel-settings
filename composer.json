@@ -1,5 +1,5 @@
 {
-  "name": "qcod/laravel-settings",
+  "name": "huantime/laravel-settings",
   "description": "Store key value pair in database as settings",
   "homepage": "https://github.com/qcod/laravel-settings",
   "type": "library",
