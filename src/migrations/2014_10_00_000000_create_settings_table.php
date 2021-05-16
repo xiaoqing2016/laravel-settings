@@ -28,6 +28,6 @@ class CreateSettingsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('huantime_app_settings');
+        Schema::dropIfExists('app_settings');
     }
 }
