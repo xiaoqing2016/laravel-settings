@@ -14,7 +14,7 @@ class AddGroupColumnOnSettingsTable extends Migration
     public function up()
     {
         Schema::table('app_settings', function (Blueprint $table) {
-            $table->dropUnique('settings_name_unique');
+            //$table->dropUnique('settings_name_unique');
             $table->string('group')->default('default');
         });
     }
